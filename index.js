@@ -50,7 +50,7 @@ function askQuestion(question, answer) {
 
   let userAnswer = readlineSync.question(redBold(question));
 
-  if (userAnswer == answer) {
+  if (userAnswer.toLowerCase() == answer.toLowerCase()) {
     return true;
   } else {
     return false;
